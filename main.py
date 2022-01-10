@@ -54,14 +54,13 @@ if fileObject:
     st.balloons()
     st.header("Transcribed Text")
     st.write(result['text'])
-    result = get_text(result.split('\n',1)[0])
 #Sidebar Nav Menue
 with st.sidebar:
     #image = Image.open("./img/iconlogo.png")
     #st.image(image, width=175, caption=""" 'A.I Powered Transcription ' """)
     st.title("MY TRANSCRIPTION")
     st.header("DOCUMENTS")
-    contact = st.button(label="CONTACT")
+    contact = st.button(label="upload_File")
 
 #Form Submission Function
 st.sidebar.info('CLIENT ZONE')
